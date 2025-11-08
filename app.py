@@ -104,3 +104,4 @@ if st.button("📆 Lihat Prakiraan & Prediksi AI"):
         fig_pred = px.scatter(df3, x="Jam", y="Suhu (°C)", title="Prediksi Tren Suhu (AI)")
         fig_pred.add_scatter(x=[len(df3)+2], y=[suhu_pred], mode="markers+text", text=["Prediksi"], name="Prediksi", marker=dict(size=10))
         st.plotly_chart(fig_pred)
+
